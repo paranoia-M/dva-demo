@@ -6,6 +6,7 @@ useContext组件会在context值变化时重新渲染，所以<MyContext.Provide
 <MyContext.Provider> 的 value 发生变化时候， 包裹的组件无论是否订阅content value，所有组件都会从新渲染。
 demo中child2 不应该rerender, 如何避免不必要的render？*
 使用React.memo优化。因为在初次渲染的时候已经确定了props，所以更改value之后不应该对child2产生影响，使用React,memo（）记忆函数包裹下整体的函数组件就可以不用重新渲染child2而优化性能
+--
 */
 const MyContext = React.createContext();
 function Ctx() {
