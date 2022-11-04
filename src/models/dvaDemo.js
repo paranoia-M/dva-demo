@@ -1,6 +1,6 @@
 import req from "./request";
 const url = "https://api.apiopen.top/getJoke";
-const request = req(url);
+// const request = req(url);
 
 export default {
   namespace: "dvaDemo",
